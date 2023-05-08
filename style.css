@@ -1,0 +1,39 @@
+body{
+margin: 0;
+}
+
+nav{
+    background-color:aqua;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+}
+nav div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+nav > div > img {
+height: 70%;
+}
+
+nav img{
+    height: 200%;
+}
+nav > .menu > a{
+    padding: 0 8px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+#hero.judul{
+    background-color: chocolate;
+    text-align: center;
+    color: white;
+}
