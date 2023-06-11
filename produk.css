@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-color: #f24f04;
+    --text-color: #252429;
+    --bg-color: #fffefb;
+    --rr-color: #ffa50a;
+    --other-color: #95949a;
+    --bb-color: #fff2de;
+
+    --big-font: 4.4rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+section{
+    padding: 50px 18% 30px;
+}
+.center-text{
+    height: fit-content;
+    text-align: center;
+}
+.center-text strong{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--main-color);
+}
+.center-text h2{
+    font-family: 'playfair Display', serif;
+    font-size: var(--h2-font);
+    font-weight: 900;
+}
+section#content{
+    background-color:var(--bg-color);
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  section#content .row {
+    box-shadow: -1px 15px 26px -4px var(--rr-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    cursor: pointer;
+    transition: all ease 0.50s;
+  }
+  .row h6{
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--main-color);
+    margin: 3px 5px;
+  }
+  .ratings i{
+    font-size: 1rem;
+    color: var(--rr-color);
+    margin: 5px 2px;
+   
+  }
+  section#content .row:hover{
+    transform: translateY(-8px);
+  }
+  
+  @media (min-width: 450px) {
+    section#content .row {
+      width: 44%;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    section#content .row {
+      width: 25%;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    section#content .row {
+      width: 12%;
+    }
+  }
+  
+  section#content img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+#darkmode{
+    font-size: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+body.dark{
+    --text-color: #fff;
+    --bg-color: #1f1f1f;
+    --bb-color:#0e0e0e;
+    
+}
