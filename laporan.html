@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Fetch API</title>
+    <style>
+        #user-list {
+            list-style: none;
+        }
+        .user-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Pengguna</h1>
+    <ul id="user-list"></ul>
+
+    <script>
+        // Mengambil data pengguna dari API menggunakan Fetch API
+        fetch('https://api.example.com/users')
+            .then(response => response.json())
+            .then(data => {
+                // Memproses data pengguna
+                const userList = document.getElementById('user-list');
+                data.forEach(user => {
+                    const li = document.createElement('li');
+                    li.classList.add('user-item');
+                    li.innerHTML = `
+                        <h3>${user.name}</h3>
+                        <p>ID: ${user.id}</p>
+                        <p>Email: ${user.email}</p>
+                    `;
+                    userList.appendChild(li);
+                });
+            })
+            .catch(error => {
+                // Menangani kesalahan
+                console.log('Terjadi kesalahan:', error);
+            });
+    </script>
+</body>
+</html>

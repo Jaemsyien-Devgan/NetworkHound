@@ -10,7 +10,7 @@ async function getData() {
     console.log(contentData)
     console.log('test B')
   
-    const table = document.querySelector('section#content')
+    const table = document.querySelector('div.content')
   
     // console.log(table)
     for (let i = 0; i < contentData.length; i++) {
