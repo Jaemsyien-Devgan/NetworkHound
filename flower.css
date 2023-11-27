@@ -1,0 +1,13 @@
+.button {
+    position: fixed;
+    bottom: 20px; /* Jarak dari atas */
+    right: 650px; /* Jarak dari kanan */
+    background-color: #0c4e52;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .button a {
+    color: #fff;
+    text-decoration: none;
+  }
