@@ -1344,3 +1344,38 @@ body {
   color: #fff; /* Warna teks saat hover */
   box-shadow: 0 0 20px rgba(52, 152, 219, 0.9); /* Efek "glow" saat hover */
 }
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.whatsapp-button img {
+  width: 60px; /* Adjust the size as needed */
+  height: 60px; /* Adjust the size as needed */
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  padding: 10px;
+  justify-content: center;
+  text-decoration: none;
+  
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+}
+.whatsapp-button a{
+  color: #fff;
+}
